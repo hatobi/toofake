@@ -10,3 +10,4 @@ node_modules/
 prop.py
 .env
 /test
+.DS_Store
