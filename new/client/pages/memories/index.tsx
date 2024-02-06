@@ -171,8 +171,7 @@ async function downloadMemories() {
         monthString = monthString.replaceAll("/", "-"); // Slashes aren't allowed for filenames
 
         // Date string for files in the form: "Month Day, Year"
-        let dateString = memoryDate.toLocaleString('en-us', { dateStyle: 'long' })
-
+        let dateString = memoryDate.toISOString().split('T')[0];
 
         // An error can happen here, InvalidStateException
         // Caused by the primary/secondary image fetch being corrupt,
